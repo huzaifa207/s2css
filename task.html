@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        main {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        article {
+            border: 2px solid black;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 15px 10px;
+        }
+
+        .user-details {
+            display: flex;
+            gap: 10px;
+            
+            & h3 {
+                margin: 0 0 5px;
+            }
+        }
+
+        .image-container {
+            border: 2px solid black;
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+            background-image: url("data/genshin.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .content {
+            flex: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+
+            & h3 {
+                margin: 0 0 5px;
+            }
+            & p {
+                margin: 0 0 5px;
+            }
+
+            & .content-image {
+                width: 60%;
+                margin: auto;
+                aspect-ratio: 16/9;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+        }
+        
+        .small {
+            color: gray;
+            font-size: smaller;
+            cursor: default;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <main>
+        <article>
+            <div class="user-details">
+                <div class="image-container"></div>
+                <h3>Username</h3>
+            </div>
+            <div class="content">
+                <h3>Title of the post</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae inventore modi maxime quia
+                    doloribus. Ipsa dicta totam tempore quam quos sapiente explicabo corrupti, nesciunt veniam quia
+                    dolorem, rem illo unde.</p>
+                    <div class="content-image">
+                        <img src="data/illustration.webp" alt="" width="100%">
+                    </div>
+            </div>
+            <p class="small">
+                Created at: August 25, 2023
+            </p>
+        </article>
+
+        <article>
+            <div class="user-details">
+                <div class="image-container"></div>
+                <h3>Username</h3>
+            </div>
+            <div class="content">
+                <h3>Title of the post</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae inventore modi maxime quia
+                    doloribus. Ipsa dicta totam tempore quam quos sapiente explicabo corrupti, nesciunt veniam quia
+                    dolorem, rem illo unde.</p>
+                    <div class="content-image">
+                        <img src="data/thumbnail.jpeg" alt="" width="100%">
+                    </div>
+            </div>
+            <p class="small">
+                Created at: August 25, 2023
+            </p>
+        </article>
+
+        <article>
+            <div class="user-details">
+                <div class="image-container"></div>
+                <h3>Username</h3>
+            </div>
+            <div class="content">
+                <h3>Title of the post</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae inventore modi maxime quia
+                    doloribus. Ipsa dicta totam tempore quam quos sapiente explicabo corrupti, nesciunt veniam quia
+                    dolorem, rem illo unde.</p>
+                    <div class="content-image">
+                        <img src="data/illustration.webp" alt="" width="100%">
+                    </div>
+            </div>
+            <p class="small">
+                Created at: August 25, 2023
+            </p>
+        </article>
+
+        <article>
+            <div class="user-details">
+                <div class="image-container"></div>
+                <h3>Username</h3>
+            </div>
+            <div class="content">
+                <h3>Title of the post</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae inventore modi maxime quia
+                    doloribus. Ipsa dicta totam tempore quam quos sapiente explicabo corrupti, nesciunt veniam quia
+                    dolorem, rem illo unde.</p>
+                    <div class="content-image">
+                        <img src="data/genshin.jpg" alt="" width="100%">
+                    </div>
+            </div>
+            <p class="small">
+                Created at: August 25, 2023
+            </p>
+        </article>
+    </main>
+
+</body>
+
+</html>
